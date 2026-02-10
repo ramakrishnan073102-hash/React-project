@@ -71,7 +71,9 @@ function Home() {
     {/* Marquee */}
 
     <div style={{ width: "100%", background: "black", color: "white", padding: "10px" }}>
-      <marquee gradient={false} speed={60}>
+      <marquee 
+      // gradient={false}
+       speed={60}>
         🚀 Welcome to our Online Store! | 🎉 Big Sale on Men’s Wear | 🛒 Free Shipping on Orders Above ₹999 |
         🚀 Welcome to our Online Store! | 🎉 Big Sale on Men’s Wear | 🛒 Free Shipping on Orders Above ₹999 |
          🚀 Welcome to our Online Store! | 🎉 Big Sale on Men’s Wear | 🛒 Free Shipping on Orders Above ₹999 |
@@ -104,8 +106,9 @@ function Home() {
             <Nav.Link as={Link} to="/gallery">GALLERY</Nav.Link>
             <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
              <Nav.Link as={Link} to="/contact">CONTACT</Nav.Link>
+
            <Link to="/collections" style={{ textDecoration: "none"}}>
-           <Nav.Link href='#collections'>COLLEACTIONS </Nav.Link>
+           {/* <Nav.Link href='/products'>COLLEACTIONS </Nav.Link> */}
            
             </Link> 
           </Nav>
