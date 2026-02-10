@@ -1,0 +1,252 @@
+.carouselSection img {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carouselSection h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carouselSection p {
+  font-size: 1.1rem;
+}
+
+/* Contact Info Section */
+.contactInfo {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.contactInfo h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.infoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.infoBox {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 260px;
+  transition: transform 0.3s;
+}
+
+.infoBox:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Follow Us */
+.followUs {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.followUs h2 {
+  margin-bottom: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialIcons a {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+  color: #007bff;
+}
+
+/* Contact Form */
+.formSection {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.contactForm {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  gap: 15px;
+}
+
+.formRow input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+}
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 20px auto;
+}
+
+.footerContent ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerContent ul li {
+  margin-bottom: 8px;
+}
+
+.footerContent a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footerContent a:hover {
+  color: #007bff;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.copyRight {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+  }
+
+  .infoBox {
+    width: 90%;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
+.footer h3, .footer h4 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 8px 0;
+}
+
+.footer ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #ffcc00;
+}
+
+.footerSocial a {
+  color: white;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.footerSocial a:hover {
+  color: #ffcc00;
+}
+
+.copyRight {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+

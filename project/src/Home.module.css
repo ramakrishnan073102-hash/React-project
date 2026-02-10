@@ -1,0 +1,417 @@
+/* ===== General Styling ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Navbar ===== */
+.bodytertiary {
+  background-color: #000;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+}
+
+.navmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 25px;
+}
+
+.navmain a {
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navmain a:hover {
+  color: #ffcb05 !important;
+  text-decoration: underline;
+}
+
+/* ===== Carousel ===== */
+.Carousel img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+}
+
+.Caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.Caption h2,
+.Caption h1,
+.Caption h4 {
+  color: white;
+  font-family: 'Serif';
+}
+
+.Caption button {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.Caption button:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* ===== Collection Cards ===== */
+.collectioncard {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.cardTitle {
+  text-align: center;
+  font-family: serif;
+  font-size: 22px;
+}
+
+.cardText {
+  font-size: 15px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.collectionbtn {
+  display: block;
+  width: 100%;
+  background-color: black !important;
+  color: white !important;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.collectionbtn:hover {
+  background-color: #f6f9f6 !important;
+  color: black !important;
+}
+
+/* ===== Float Section ===== */
+.float {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+  background: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.floatImg img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.floatPara {
+  max-width: 600px;
+  font-size: 17px;
+  line-height: 1.7;
+  font-family: serif;
+  color: #333;
+}
+
+/* ===== Model Section ===== */
+.modelImg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.styleImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.styleImg:hover {
+  transform: scale(1.05);
+}
+
+.modelPara {
+  font-size: 17px;
+  text-align: justify;
+  margin: 20px auto;
+  max-width: 1000px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* ===== Hoodie, Polo, Jeans Sections ===== */
+.hoodieMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hoodieImg {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.hoodieImg:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Responsive Design ===== */
+
+/* Large Tablets */
+@media (max-width: 1024px) {
+  .Carousel img {
+    height: 70vh;
+  }
+
+  .floatImg img {
+    width: 350px;
+  }
+
+  .hoodieImg {
+    width: 300px;
+    height: 380px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .navmain {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Caption h1, .Caption h2 {
+    font-size: 1.2rem;
+  }
+
+  .collectioncard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .float {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .floatImg img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hoodieMain {
+    flex-direction: column;
+  }
+
+  .hoodieImg {
+    width: 80%;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .Carousel img {
+    height: 55vh;
+  }
+
+  .Caption h1,
+  .Caption h2,
+  .Caption h4 {
+    font-size: 1rem;
+  }
+
+  .floatPara {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .collectionbtn {
+    font-size: 14px;
+  }
+
+  .styleImg {
+    height: 200px;
+  }
+
+  .hoodieImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* === Footer Base === */
+.footer {
+  background: linear-gradient(180deg, #000000, #1a1a1a);
+  color: #fff;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* === Brand Section === */
+.footerBrand h2 {
+  color: #ffcc00;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.footerBrand p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+  max-width: 260px;
+}
+
+/* === Quick Links === */
+.footerLinks h4 {
+  color: #ffcc00;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks ul li {
+  margin: 8px 0;
+}
+
+.footerLinks ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footerLinks ul li a:hover {
+  color: #ffcc00;
+}
+
+/* === Contact Section === */
+.footerContact h4 {
+  color: #ffcc00;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footerContact p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* === Social Media === */
+.footerSocial h4 {
+  color: #ffcc00;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons a {
+  color: #fff;
+  font-size: 22px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socialIcons a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
+}
+
+/* === Copyright === */
+.copyright {
+  border-top: 1px solid #333;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* === Responsive Design === */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .footerContainer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footerBrand p {
+    max-width: 100%;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .footerBrand h2 {
+    font-size: 22px;
+  }
+
+  .footerLinks h4,
+  .footerContact h4,
+  .footerSocial h4 {
+    font-size: 16px;
+  }
+
+  .socialIcons a {
+    font-size: 20px;
+  }
+}
