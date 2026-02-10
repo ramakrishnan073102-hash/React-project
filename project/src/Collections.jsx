@@ -444,13 +444,20 @@ const sendEmail = (e) => {
 
       <div className={styles.formRow}>
         <input
-          type="text"
-          name="mobile_number"
-          placeholder="Mobile Number"
-          value={customer.mobile}
-          onChange={(e) => setCustomer({ ...customer, mobile: e.target.value })}
-          required
-        />
+  type="text"
+  name="mobile_number"
+  placeholder="Mobile Number"
+  value={customer.mobile}
+  onChange={(e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setCustomer({ ...customer, mobile: value });
+    }
+  }}
+  maxLength={10}
+  required
+/>
+
         <input
           type="email"
           name="email"
